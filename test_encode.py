@@ -6,3 +6,7 @@ def test_empty_string():
 def test_no_repeat_characters():
     assert encode("abcd") == "abcd"
     assert encode("test") == "test"
+
+def test_single_repeating_character():
+    assert encode("qqqq") == "q4"
+    assert encode("tttttttt") == "t8"
