@@ -22,3 +22,7 @@ def test_multiple_repeating_characters():
 def test_lowercase_and_uppercase_characters():
     assert encode("AAaaaIIIIIww") == "A2a3I5w2"
     assert encode("rrTTTTTwwwKKKll") == "r2T5w3K3l2"
+
+def test_repeating_and_non_repeating_characters_in_string():
+    assert encode("wwwrzzzzzzfg") == "w3rz6fg"
+    assert encode("cooooooool") == "co8l"
