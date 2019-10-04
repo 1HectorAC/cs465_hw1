@@ -1,3 +1,3 @@
 
 def encode(input_string):
-    return ""
+    return input_string
