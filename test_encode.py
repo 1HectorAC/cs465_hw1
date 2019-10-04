@@ -18,3 +18,7 @@ def test_two_repeating_characters():
 def test_multiple_repeating_characters():
     assert encode("ttttrryyyyyyy") == "t4r2y7"
     assert encode("wwooooeeehhhhhccc") == "w2o4e3h5c3"
+
+def test_lowercase_and_uppercase_characters():
+    assert encode("AAaaaIIIIIww") == "A2a3I5w2"
+    assert encode("rrTTTTTwwwKKKll") == "r2T5w3K3l2"
