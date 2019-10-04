@@ -14,3 +14,7 @@ def test_single_repeating_character():
 def test_two_repeating_characters():
     assert encode("eerrrr") == "e2r4"
     assert encode("nnnnoooooo") == "n4o6"
+
+def test_multiple_repeating_characters():
+    assert encode("ttttrryyyyyyy") == "t4r2y7"
+    assert encode("wwooooeeehhhhhccc") == "w2o4e3h5c3"
